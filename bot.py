@@ -1,4 +1,4 @@
-bot.run("import discord
+import discord
 from discord.ext import commands
 import random
 import json
@@ -126,7 +126,8 @@ async def ban(ctx, member: discord.Member, *, reason=None):
 @commands.has_permissions(manage_messages=True)
 async def clear(ctx, amount: int = 5):
     await ctx.channel.purge(limit=amount + 1)
-    await ctx.send(f"Διαγράφηκαν {amount} μηνύματα.", delete_after=3)
+    await ctx.send(f"Διαγράφηκαν {amo
+                                  
+                                  unt} μηνύματα.", delete_after=3)
 
 bot.run(os.environ["DISCORD_TOKEN"])
-")
