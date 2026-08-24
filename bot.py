@@ -1,4 +1,4 @@
-import discord
+scord
 from discord.ext import commands
 import random
 import json
@@ -128,4 +128,4 @@ async def clear(ctx, amount: int = 5):
     await ctx.channel.purge(limit=amount + 1)
     await ctx.send(f"Διαγραφηκαν {amount} μηνυματα.", delete_after=3)
 
-bot.run(os.environ["DISCORD_TOKEN"])
+bot.run(os.environ["Discord_Token"])
